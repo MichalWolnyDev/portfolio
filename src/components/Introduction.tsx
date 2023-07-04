@@ -10,12 +10,10 @@ const Introduction = () => {
         <div className="flex items-center">
           <div className="flex-auto">
             <Title>Hello, I'm Michał</Title>
-
             <p className="text-xl mb-8 font-thin">
               Professional Frontend Developer from Poland.
             </p>
             <Button text="About me"/>
-         
           </div>
           <div className="flex-auto">
             <Image
