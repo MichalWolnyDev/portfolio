@@ -2,8 +2,8 @@ import React from 'react'
 
 const Navigation = () => {
   return (
-    <nav className='bg-ui-darkgray'>
-        <div className='container mx-auto px-4 py-6'>
+    <nav className='bg-ui-darkgray relative z-50 sticky top-0'>
+        <div className='container mx-auto px-8 xl:px-32 md:px-20 py-6'>
             <div className="flex justify-between">
                 <div>
                     Michał Wolny
@@ -15,9 +15,6 @@ const Navigation = () => {
                         </li>
                         <li>
                             About
-                        </li>
-                        <li>
-                            Skills
                         </li>
                         <li>
                             Experience

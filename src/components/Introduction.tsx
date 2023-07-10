@@ -5,7 +5,7 @@ import Button from "./UI/Button";
 
 const Introduction = () => {
   return (
-    <section className="h-full flex items-center">
+    <section className="h-screen flex items-center">
       <div className="container mx-auto px-8 xl:px-32 md:px-20 py-12">
         <div className="flex items-center">
           <div className="flex-auto">
@@ -20,8 +20,8 @@ const Introduction = () => {
               className="mx-auto rounded-full shadow-image"
               src="/michal-wolny.jpg"
               alt="Michał Wolny"
-              width="480"
-              height="480"
+              width="380"
+              height="380"
             />
           </div>
         </div>
