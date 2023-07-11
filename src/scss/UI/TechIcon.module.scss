@@ -1,0 +1,18 @@
+.icon {
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 40px -4px rgba(102, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 40px -4px rgba(102, 255, 255, 1);
+    box-shadow: 0px 0px 40px -4px rgba(102, 255, 255, 1);
+
+
+    img {
+        width: 60px;
+        height: auto;
+    }
+}

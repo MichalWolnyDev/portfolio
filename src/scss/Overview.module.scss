@@ -1,0 +1,28 @@
+.overview{
+    &__icon{
+        position: absolute;
+
+        &:nth-child(1){
+            left: 20%;
+            top: -200px;
+            transform: scale(1.4);
+        }
+        &:nth-child(2){
+            left: 50%;
+            top: -100px;
+        }
+        &:nth-child(3){
+            left: 80%;
+            top: -160px;
+            transform: scale(.8);
+        }
+        &:nth-child(4){
+            left: 15%;
+        }
+        &:nth-child(5){
+            left: 65%;
+            top: 50px;
+            transform: scale(1.3);
+        }
+    }
+}

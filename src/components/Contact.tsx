@@ -3,7 +3,7 @@ import Title from "./UI/Title";
 
 export const Contact = () => {
     return (
-        <section className="h-screen flex items-center">
+        <section className="h-screen flex items-center bg-ui-black relative">
             <div className="container mx-auto px-8 xl:px-32 md:px-20 py-12">
                 <div className="flex items-center max-w-3xl">
                     <div className="flex-auto">

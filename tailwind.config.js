@@ -22,6 +22,7 @@ module.exports = {
           'gray': '#c5c6c7',
           'aqua': '#66fcf1',
           'darkaqua': '#45a29e',
+          'darkblue': '#010822'
         },
         txt: {
           'gray': '#c5c6c7'

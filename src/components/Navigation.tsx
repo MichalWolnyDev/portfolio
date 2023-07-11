@@ -5,9 +5,9 @@ const Navigation = () => {
     <nav className='bg-ui-darkgray relative z-50 sticky top-0'>
         <div className='container mx-auto px-8 xl:px-32 md:px-20 py-6'>
             <div className="flex justify-between">
-                <div>
+                <p>
                     Michał Wolny
-                </div>
+                </p>
                 <div>
                     <ul className="flex gap-6 text-txt-gray">
                         <li>
