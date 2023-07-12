@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Title = props => {
+type TitleProps = {
+  children?: React.ReactNode
+}
+
+const Title = (props: TitleProps) => {
   return (
-    <h1 className='text-6xl mb-4'>
+    <h1 className='xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl mb-4'>
         {props.children}
     </h1>
   )

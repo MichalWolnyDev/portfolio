@@ -1,0 +1,9 @@
+.nav {
+    &__link{
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        &:hover{
+            color: #66fcf1;
+        }
+    }
+}

@@ -1,29 +1,28 @@
+"use client";
 import React from "react";
-import Image from "next/image";
 import Title from "./UI/Title";
 import Button from "./UI/Button";
-import styles from "../scss/Introduction.module.scss"
+import styles from "../scss/Introduction.module.scss";
+import { useScrollTo } from "@/hooks/use-scroll";
 
 const Introduction = () => {
   return (
-    <section className={`h-screen flex items-center ${styles.intro}`}>
+    <section className={`md:h-screen h-full flex items-center ${styles.intro}`} id="home">
       <div className="container mx-auto px-8 xl:px-32 md:px-20 py-12">
-        <div className="flex items-center">
-          <div className="flex-auto">
+        <div className="flex md:flex-row flex-col md:gap-8 gap-16 items-center">
+          <div className="flex-auto md:w-1/2 w-full">
+            <img
+              src="/michal-wolny.jpg"
+              className={`${styles.intro__image} md:mx-auto rounded-full shadow-image`}
+              alt="Michał Wolny"
+            />
+          </div>
+          <div className="flex-auto md:w-1/2 w-full">
             <Title>Hello, I'm Michał</Title>
-            <p className="text-xl mb-8 font-thin">
+            <p className="md:text-xl text-base mb-8 font-thin">
               Professional Frontend Developer from Poland.
             </p>
-            <Button text="About me"/>
-          </div>
-          <div className="flex-auto">
-            <Image
-              className="mx-auto rounded-full shadow-image"
-              src="/michal-wolny.jpg"
-              alt="Michał Wolny"
-              width="380"
-              height="380"
-            />
+            <Button text="About me" onClick={() => useScrollTo("about")} />
           </div>
         </div>
       </div>
