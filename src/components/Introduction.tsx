@@ -4,6 +4,7 @@ import Title from "./UI/Title";
 import Button from "./UI/Button";
 import styles from "../scss/Introduction.module.scss";
 import { useScrollTo } from "@/hooks/use-scroll";
+import BlueLine from "./UI/BlueLine";
 
 const Introduction = () => {
   return (
@@ -19,6 +20,7 @@ const Introduction = () => {
           </div>
           <div className="flex-auto md:w-1/2 w-full">
             <Title>Hello, I'm Michał</Title>
+            <BlueLine />
             <p className="md:text-xl text-base mb-8 font-thin">
               Professional Frontend Developer from Poland.
             </p>

@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-ui-darkgray relative z-50">
       <div className="container mx-auto px-8 xl:px-32 md:px-20 py-8">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center md:flex-row flex-col gap-4">
           <p className="text-txt-gray">&copy; Michał Wolny, 2023</p>
           <div className="flex gap-4 items-center">
             <a href="https://github.com/MichalWolnyDev" target="_blank">
@@ -20,12 +20,12 @@ const Footer = () => {
             >
               <LinkedinIcon />
             </a>
-            <a href="">
+            <a href="mailto:mwolny.business@gmail.com">
               <EmailIcon />
             </a>
-            <a href="">
+            {/* <a href="tel:+48 798 157 003">
               <PhoneIcon />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
