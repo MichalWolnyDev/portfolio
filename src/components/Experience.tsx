@@ -7,7 +7,7 @@ import Button from "./UI/Button";
 const Experience = () => {
   return (
     <section
-      className="md:h-screen h-full flex items-center bg-black relative"
+      className="h-full flex items-center bg-black relative md:py-36 py-4"
       id="exp"
     >
       <div className="container mx-auto px-8 xl:px-32 md:px-20 py-12">

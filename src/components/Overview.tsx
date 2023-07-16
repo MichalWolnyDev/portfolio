@@ -14,7 +14,7 @@ import BlueLine from "./UI/BlueLine";
 
 const Overview = () => {
   return (
-    <section className="md:h-screen h-full flex items-center bg-ui-black relative" id="about">
+    <section className="h-full flex items-center bg-ui-black relative md:py-36 py-4" id="about">
       <div className="container mx-auto px-8 xl:px-32 md:px-20 py-12">
         <div className="flex md:flex-row flex-col items-center gap-16">
           <div className="flex-auto md:w-1/2 w-full">

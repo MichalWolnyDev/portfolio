@@ -7,7 +7,7 @@ import BlueLine from "./UI/BlueLine";
 export const Contact = () => {
   return (
     <section
-      className="md:h-screen h-full flex items-center bg-ui-black relative"
+      className="md:h-screen h-full flex items-center bg-black relative"
       id="contact"
     >
       <div className="container mx-auto px-8 xl:px-32 md:px-20 py-12">

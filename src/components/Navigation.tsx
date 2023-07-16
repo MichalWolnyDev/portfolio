@@ -24,7 +24,10 @@ const Navigation = () => {
                             About
                         </li>
                         <li className={styles.nav__link} onClick={() => useScrollTo("exp")}>
-                            Experience
+                            Work experience
+                        </li>
+                        <li className={styles.nav__link} onClick={() => useScrollTo("projects")}>
+                            Personal projects
                         </li>
                         <li className={styles.nav__link} onClick={() => useScrollTo("contact")}>
                             Contact
