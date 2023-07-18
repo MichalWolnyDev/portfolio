@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useContext, Dispatch, SetStateAction, useState } from "react";
+import { createContext, useContext, Dispatch, SetStateAction, useState, ReactNode } from "react";
 
 interface ContextProps {
     showMenu: boolean,
@@ -12,7 +12,7 @@ const GlobalContext = createContext<ContextProps>({
     setShowMenu: (): boolean => false
 })
 
-export const GlobalContextProvider = ({children}) => {
+export const GlobalContextProvider = ({ children }: { children: ReactNode }) => {
     const [showMenu, setShowMenu] = useState(false);
 
     return (
