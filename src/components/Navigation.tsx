@@ -3,10 +3,19 @@ import React from 'react'
 import styles from '../scss/Navigation.module.scss'
 import { useScrollTo } from '@/hooks/use-scroll';
 import HamburgerIcon from './Svg/HamburgerIcon';
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+// import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import MobileMenu from './MobileMenu';
+import { useGlobalContext } from '@/app/context/store';
+
 
 
 const Navigation = () => {
+    const {showMenu, setShowMenu} = useGlobalContext();
+
+    const showMenuHandler = () => {
+        setShowMenu(true)
+    }
+
 
   return (
     <nav className='bg-ui-darkgray relative z-50 sticky top-0'>
@@ -34,12 +43,13 @@ const Navigation = () => {
                         </li>
                     </ul>
                 </div>
-                <div className={styles['nav__menu-mobile']}>
-                    <HamburgerIcon/>
+                <div className={styles['nav__menu-mobile']} onClick={showMenuHandler}>
+                    <HamburgerIcon />
                 </div>
             </div>
 
         </div>
+        {showMenu && <MobileMenu />}
     </nav>
   )
 }
