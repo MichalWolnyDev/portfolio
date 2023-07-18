@@ -3,16 +3,22 @@ import React from "react";
 import Title from "./UI/Title";
 import Button from "./UI/Button";
 import styles from "../scss/Introduction.module.scss";
-import useScrollTo from "@/hooks/use-scroll";
 import BlueLine from "./UI/BlueLine";
-
-const scrollHandler = (goal: string) => {
-  useScrollTo(goal)
-}
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
 
 const Introduction = () => {
   return (
-    <section className={`md:h-screen h-full flex items-center ${styles.intro}`} id="home">
+    <section
+      className={`md:h-screen h-full flex items-center ${styles.intro}`}
+      id="home"
+    >
       <div className="container mx-auto px-8 xl:px-32 md:px-20 py-12">
         <div className="flex md:flex-row flex-col md:gap-8 gap-16 items-center">
           <div className="flex-auto md:w-1/2 w-full">
@@ -28,7 +34,9 @@ const Introduction = () => {
             <p className="md:text-xl text-base mb-8 font-thin">
               Professional Frontend Developer from Poland.
             </p>
-            <Button text="About me" onClick={() => scrollHandler("about")} />
+            <Link to="about" spy={true} smooth={true} duration={500}>
+              <Button text="About me" />
+            </Link>
           </div>
         </div>
       </div>
