@@ -16,6 +16,9 @@ const Navigation = () => {
         setShowMenu(true)
     }
 
+    const scrollHandler = (goal: string) => {
+        useScrollTo(goal)
+      }
 
   return (
     <nav className='bg-ui-darkgray relative z-50 sticky top-0'>
@@ -26,19 +29,19 @@ const Navigation = () => {
                 </p>
                 <div className={styles.nav__menu}>
                     <ul className="flex gap-6 text-txt-gray">
-                        <li className={styles.nav__link} onClick={() => useScrollTo("home")}>
+                        <li className={styles.nav__link} onClick={() => scrollHandler("home")}>
                             Home
                         </li>
-                        <li className={styles.nav__link} onClick={() => useScrollTo("about")}>
+                        <li className={styles.nav__link} onClick={() => scrollHandler("about")}>
                             About
                         </li>
-                        <li className={styles.nav__link} onClick={() => useScrollTo("exp")}>
+                        <li className={styles.nav__link} onClick={() => scrollHandler("exp")}>
                             Work experience
                         </li>
-                        <li className={styles.nav__link} onClick={() => useScrollTo("projects")}>
+                        <li className={styles.nav__link} onClick={() => scrollHandler("projects")}>
                             Personal projects
                         </li>
-                        <li className={styles.nav__link} onClick={() => useScrollTo("contact")}>
+                        <li className={styles.nav__link} onClick={() => scrollHandler("contact")}>
                             Contact
                         </li>
                     </ul>

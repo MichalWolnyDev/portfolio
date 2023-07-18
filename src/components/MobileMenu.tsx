@@ -13,6 +13,11 @@ const MobileMenu = () => {
         setShowMenu(false)
     }
 
+    const scrollHandler = (goal: string) => {
+        useScrollTo(goal)
+      }
+
+
   return (
     <div className={`bg-ui-darkgray ${styles.menu}`}>
       <div className={styles.menu__content}>
@@ -20,24 +25,24 @@ const MobileMenu = () => {
            <CloseIcon/>
         </div>
         <ul className={`text-txt-gray ${styles.menu__list}`}>
-          <li className={styles.nav__link} onClick={() => {useScrollTo("home"); showMenuHandler()}}>
+          <li className={styles.nav__link} onClick={() => {scrollHandler("home"); showMenuHandler()}}>
             Home
           </li>
-          <li className={styles.nav__link} onClick={() => {useScrollTo("about"); showMenuHandler()}}>
+          <li className={styles.nav__link} onClick={() => {scrollHandler("about"); showMenuHandler()}}>
             About
           </li>
-          <li className={styles.nav__link} onClick={() => {useScrollTo("exp"); showMenuHandler()}}>
+          <li className={styles.nav__link} onClick={() => {scrollHandler("exp"); showMenuHandler()}}>
             Work experience
           </li>
           <li
             className={styles.nav__link}
-            onClick={() => {useScrollTo("projects"); showMenuHandler()}}
+            onClick={() => {scrollHandler("projects"); showMenuHandler()}}
           >
             Personal projects
           </li>
           <li
             className={styles.nav__link}
-            onClick={() => {useScrollTo("contact"); showMenuHandler()}}
+            onClick={() => {scrollHandler("contact"); showMenuHandler()}}
           >
             Contact
           </li>

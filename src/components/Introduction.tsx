@@ -6,6 +6,10 @@ import styles from "../scss/Introduction.module.scss";
 import { useScrollTo } from "@/hooks/use-scroll";
 import BlueLine from "./UI/BlueLine";
 
+const scrollHandler = (goal: string) => {
+  useScrollTo(goal)
+}
+
 const Introduction = () => {
   return (
     <section className={`md:h-screen h-full flex items-center ${styles.intro}`} id="home">
@@ -19,12 +23,12 @@ const Introduction = () => {
             />
           </div>
           <div className="flex-auto md:w-1/2 w-full">
-            <Title>Hello, I'm Michał</Title>
+            <Title>Hello, I&apos;m Michał</Title>
             <BlueLine />
             <p className="md:text-xl text-base mb-8 font-thin">
               Professional Frontend Developer from Poland.
             </p>
-            <Button text="About me" onClick={() => useScrollTo("about")} />
+            <Button text="About me" onClick={() => scrollHandler("about")} />
           </div>
         </div>
       </div>
