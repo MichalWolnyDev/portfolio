@@ -1,11 +1,16 @@
-export const useScrollTo = (id: string) => {
-    const el = document.getElementById(id);
 
-    if(id === 'home') window.scrollTo(0,0);
+import { useEffect } from 'react';
 
-    if(el){
-        el.scrollIntoView({
-            behavior: 'smooth'
-        })
+// if(id === 'home') window.scrollTo(0,0);
+
+
+const useScrollTo = (goal: string) => {
+  useEffect(() => {
+    const element = document.getElementById(goal);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
     }
-}
+  }, [goal]);
+};
+
+export default useScrollTo;

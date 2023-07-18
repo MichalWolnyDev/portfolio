@@ -3,7 +3,7 @@ import React from "react";
 import Title from "./UI/Title";
 import Button from "./UI/Button";
 import styles from "../scss/Introduction.module.scss";
-import { useScrollTo } from "@/hooks/use-scroll";
+import useScrollTo from "@/hooks/use-scroll";
 import BlueLine from "./UI/BlueLine";
 
 const scrollHandler = (goal: string) => {

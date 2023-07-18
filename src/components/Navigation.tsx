@@ -1,7 +1,7 @@
 'use client';
 import React from 'react'
 import styles from '../scss/Navigation.module.scss'
-import { useScrollTo } from '@/hooks/use-scroll';
+import useScrollTo from '@/hooks/use-scroll';
 import HamburgerIcon from './Svg/HamburgerIcon';
 // import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 import MobileMenu from './MobileMenu';

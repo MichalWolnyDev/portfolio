@@ -1,7 +1,7 @@
 'use client';
 import React from "react";
 import styles from "../scss/MobileMenu.module.scss";
-import { useScrollTo } from '@/hooks/use-scroll';
+import useScrollTo from '@/hooks/use-scroll';
 import CloseIcon from "./Svg/CloseIcon";
 import { useGlobalContext } from '@/app/context/store';
 
