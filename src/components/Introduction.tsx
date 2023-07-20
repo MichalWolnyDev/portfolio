@@ -16,7 +16,7 @@ import {
 const Introduction = () => {
   return (
     <section
-      className={`md:h-screen h-full flex items-center ${styles.intro}`}
+      className={`md:h-screen h-full flex items-center bg-black ${styles.intro}`}
       id="home"
     >
       <div className="container mx-auto px-8 xl:px-32 md:px-20 py-12">
@@ -31,7 +31,7 @@ const Introduction = () => {
           <div className="flex-auto md:w-1/2 w-full">
             <Title>Hello, I&apos;m Michał</Title>
             <BlueLine />
-            <p className="md:text-xl text-base mb-8 font-thin">
+            <p className="md:text-xl text-base mb-8 text-txt-gray">
               Professional Frontend Developer from Poland.
             </p>
             <Link to="about" spy={true} smooth={true} duration={500}>

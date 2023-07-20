@@ -15,7 +15,7 @@ const Experience = () => {
           <div className="flex-auto md:w-1/2 w-full">
             <Title>Work experience</Title>
             <BlueLine />
-            <p className="md:text-xl text-base mb-8 font-thin text-justify">
+            <p className="md:text-xl text-base mb-8 text-txt-gray text-justify">
               Since the beginning of 2019, I have been working full-time at{" "}
               <a href="https://webwizards.pl/" target="_blank">
                 Webwizards

@@ -15,7 +15,7 @@ export const Contact = () => {
           <div className="flex-auto md:w-1/2 w-full">
             <Title>Contact</Title>
             <BlueLine />
-            <p className="md:text-xl text-base mb-8 font-thin text-justify">
+            <p className="md:text-xl text-base mb-8 text-txt-gray text-justify">
               Thank you for visiting my portfolio. If you have any questions or
               would like to collaborate with me, please contact me. I will
               respond as soon as possible.

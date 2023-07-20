@@ -20,7 +20,7 @@ const Overview = () => {
           <div className="flex-auto md:w-1/2 w-full">
             <Title>About me</Title>
             <BlueLine />
-            <p className="md:text-xl text-base mb-8 font-thin text-justify">
+            <p className="md:text-xl text-base mb-8 text-txt-gray text-justify">
               I am a frontend developer with over four years of experience. So
               far, I have mainly worked with Vue.js, but I am also ready to work
               on projects using the React.js + Typescript stack. I am open to
