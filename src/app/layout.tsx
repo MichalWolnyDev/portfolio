@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { GlobalContextProvider } from "./context/store";
-import Script from "next/script";
+// import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,9 +16,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
   return (
     <html lang="en">
-      <head>
+      {/* <head>
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-23P2M5QCNJ" />
         <Script id="google-analytics">
           {`
@@ -29,7 +30,7 @@ export default function RootLayout({
           gtag('config', 'G-23P2M5QCNJ');
         `}
         </Script>
-      </head>
+      </head> */}
       <body className={inter.className}>
         <GlobalContextProvider>{children}</GlobalContextProvider>
       </body>

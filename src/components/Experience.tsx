@@ -1,10 +1,18 @@
+'use client';
 import React from "react";
 import Title from "./UI/Title";
 import Image from "next/image";
 import BlueLine from "./UI/BlueLine";
 import Button from "./UI/Button";
+import { logEvent } from '../utils/ga';
 
 const Experience = () => {
+
+  const cvDownloadHandler = () => {
+    logEvent('Button', 'Click','Download CV');
+
+  };
+
   return (
     <section
       className="h-full flex items-center bg-black relative md:py-36 py-4"
@@ -32,7 +40,7 @@ const Experience = () => {
               with the specifics of being a frontend developer and has further
               developed both my technical and soft skills.
             </p>
-            <a href="/CV_Michał_Wolny_2023.pdf" download target="_blank">
+            <a href="/CV_Michał_Wolny_2023.pdf" onClick={cvDownloadHandler} download target="_blank">
               <Button text="CV" />
             </a>
           </div>
