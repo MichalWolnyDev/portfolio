@@ -32,7 +32,9 @@ const Experience = () => {
               with the specifics of being a frontend developer and has further
               developed both my technical and soft skills.
             </p>
-            <Button text="CV" />
+            <a href="/CV_Michał_Wolny_2023.pdf" download target="_blank">
+              <Button text="CV" />
+            </a>
           </div>
           <div className="flex-auto md:w-1/2 w-full">
             <a href="https://webwizards.pl/" target="_blank">

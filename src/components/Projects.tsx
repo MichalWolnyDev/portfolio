@@ -9,7 +9,7 @@ const ProjectList = [
   {
     imgSrc: '/myspotistats.png',
     title: 'MySpotiStats',
-    desc: 'MySpotiStats is an app that allows browsing statistics related to our Spotify account. It provides insights into our most frequently listened albums or artists, among other things. It is built using React.js + TS technology. The data in the application is retrieved from the official Spotify Web API.',
+    desc: 'MySpotiStats is an app that allows browsing statistics related to our Spotify account. It provides insights into our most frequently listened albums or artists, among other things. It is built using React.js + TS technology. The data in the application is retrieved from the official Spotify Web API.(At this moment, logging into the application is only possible after assigning users to a Spotify developer account because the application is in the developer mode, and the Spotify WebAPI restricts access to login.)',
     githubLink: 'https://github.com/MichalWolnyDev/myspotistats',
     liveViewLink: 'https://myspotistats.netlify.app/'
   },
@@ -23,7 +23,7 @@ const ProjectList = [
   {
     imgSrc: '/inzynierka.png',
     title: 'Engineering Project',
-    desc: 'A system for booking appointments at car service centers. The frontend of the application has been developed using Vue.js + Vuex technology. Unfortunately, the person responsible for the backend of the application has deleted the entire API, causing the application to not function as intended. However, the source code for the frontend part is still available for viewing on your GitHub repository.',
+    desc: 'A system for booking appointments at car service centers. The frontend of the application has been developed using Vue.js + Vuex technology. Unfortunately, the person responsible for the backend of the application has deleted the entire API, causing the application to not function as intended. However, the source code for the frontend part is still available for viewing on my GitHub repository.',
     githubLink: 'https://github.com/MichalWolnyDev/carservice-app',
     liveViewLink: 'https://inzynierkawsb.netlify.app/login'
   },
