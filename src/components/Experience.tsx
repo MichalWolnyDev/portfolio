@@ -9,7 +9,7 @@ import { logEvent } from '../utils/ga';
 const Experience = () => {
 
   const cvDownloadHandler = () => {
-    logEvent('Button', 'Click','Download CV');
+    logEvent('Button', 'click','Download CV');
 
   };
 
